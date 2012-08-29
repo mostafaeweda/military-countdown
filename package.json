@@ -1,0 +1,9 @@
+{
+    "name": "Military status update",
+    "description": "Update twitter status with my military days left to service",
+    "version": "0.1.0",
+    "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+    "dependencies": {
+        "twit": "0.1.x",
+    }
+}
