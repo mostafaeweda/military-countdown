@@ -1,7 +1,9 @@
 ## Setup
+You should have `node` > 0.6.x installed
 Copy config.js.template file to config.js
 
-    $ cp config.js.template  
+    $ npm install # Install dependency package(s)
+    $ cp config.js.template config.js # Copy the config template file
 
 Fill your twitter credentials in config.js
 
