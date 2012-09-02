@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 var Twit = require("twit");
+var config = require("./config");
 
-var T = new Twit(require("./config"));
+var T = new Twit(config.twitter);
 
-var days = Math.floor((new Date(2012, 10, 25) - new Date()) / (1000 * 60 * 60 * 24));
+var finishDate = config.finishDate;
+
+var days = Math.floor((new Date(finishDate.year, finishDate.month-1, finishDate.day) - new Date()) / (1000 * 60 * 60 * 24));
 // 5: Big Muslim Feast
 // 4: mo5atat ra7at
 var serviceDays = days - (5 + 4 + Math.floor(days/7));

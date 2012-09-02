@@ -5,7 +5,7 @@ Copy config.js.template file to config.js
     $ npm install # Install dependency package(s)
     $ cp config.js.template config.js # Copy the config template file
 
-Fill your twitter credentials in `config.js`
+Fill your twitter credentials and finish date in `config.js`
 
 You may change the code to fit your finish date and expected vacations
 

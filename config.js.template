@@ -1,6 +1,13 @@
 module.exports = {
-    consumer_key: '...',
-    consumer_secret: '...',
-    access_token: '...',
-    access_token_secret: '...'
+    finishDate: {
+        year: 2012,
+        month: 11,
+        day: 25
+    },
+    twitter: {
+        consumer_key: '...',
+        consumer_secret: '...',
+        access_token: '...',
+        access_token_secret: '...'
+    }
 };
