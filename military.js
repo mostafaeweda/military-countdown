@@ -13,10 +13,12 @@ var serviceDays = days - (5 + 4 + Math.floor(days/7));
 
 var status = "- " + days + " days to finish\n- " + serviceDays + " service days left\n #MilitaryService #AUTOMATED";
 
-T.post("statuses/update", { status: status },
-    function(err, reply) {
-        if (err)
-            console.log("Failed !!!\n" + err);
-});
+if (process.argv[2] !== "-e") {
+    T.post("statuses/update", { status: status },
+        function(err, reply) {
+            if (err)
+                console.log("Failed !!!\n" + err);
+    });
+}
 
 console.log(status);
