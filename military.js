@@ -9,7 +9,8 @@ var finishDate = config.finishDate;
 var days = Math.floor((new Date(finishDate.year, finishDate.month-1, finishDate.day) - new Date()) / (1000 * 60 * 60 * 24));
 // 5: Big Muslim Feast
 // 4: mo5atat ra7at
-var serviceDays = days - (5 + 4 + Math.floor(days/7));
+// 6: actual delivery on 25th
+var serviceDays = days - (5 + 4 + 6 + Math.floor(days/7));
 
 var status = "- " + days + " days to finish\n- " + serviceDays + " service days left\n #MilitaryService #AUTOMATED";
 

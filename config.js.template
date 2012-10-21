@@ -1,8 +1,8 @@
 module.exports = {
     finishDate: {
         year: 2012,
-        month: 11,
-        day: 25
+        month: 12,
+        day: 1
     },
     twitter: {
         consumer_key: '...',
